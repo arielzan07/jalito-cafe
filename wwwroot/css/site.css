@@ -1,0 +1,525 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+.navbarCustomColor{
+    background-color: rgb(243, 209, 155);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 0px;
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 164, 0, 0.45);
+    outline:0;
+    border-color:inherit;
+}
+
+input.form-control:focus,
+select.form-control:focus,
+textarea.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 164, 0, 0.45);
+    outline: 0;
+    border-color: inherit;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: aliceblue;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.cursorPointer{
+    cursor:pointer;
+}
+
+.fa-trash{
+    color: darkred;
+}
+
+.fa-edit {
+    color: darkblue;
+}
+.fa-plus-circle{
+    color:green;
+}
+.toolBar > button {
+    margin: 0px 3px 0px 3px;
+}
+table.productTable {
+    margin-top: 0px;
+}
+.productTypeCardTable {
+    margin-top: 0px;
+}
+.productTypeCard {
+    background-color: floralwhite;
+    padding: 0px 2px 0px 2px;
+    margin-bottom: 4px;
+    max-height:350px;
+    overflow-y: auto;
+}
+.divProductType{
+    margin-bottom:20px;
+}
+.link {
+    color: cornflowerblue;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+.link:hover{
+    text-decoration:underline;
+}
+.black-link {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+.black-link:hover {
+    text-decoration: underline;
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+.mainBackground {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 55px;
+    z-index: 4;
+    background-color: black;
+}
+#mainBackground{
+    margin-top:50px;
+}
+div.stickyToNav {
+    position: sticky;
+    top: 40px;
+    z-index: 4;
+    padding-bottom: 5px;
+    background-color: aliceblue;
+}
+.sticky-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    left:20px;
+    right:20px;
+}
+/*div.modalFixed {
+    position: fixed;
+    height: 300px;
+    bottom: 1em;
+    top: 1em;
+    right: 1em;
+    left: 1em;
+    overflow-y:hidden;
+}*/
+.typeCard > .card-header {
+    background-color: rgba(243, 209, 155, 0.5);
+}
+
+
+div.mainBoard {
+    position: relative;
+    top: 10px;
+    left: 0px;
+    width: 50%;
+    height: 460px;
+    z-index: 0;
+    overflow-x: hidden;
+    padding: 0px 30px 0px 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div.mainOrder {
+    position: relative;
+    padding: 60px 20px 20px 20px;
+    background: url('../img/libreta.png') no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    z-index: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: rgba(51, 51, 51, 0.40) 15px 15px 10px;
+    height: 500px;
+    width: 50%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.inputList {
+    background: url('../img/libreta.png') no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(51, 51, 51, 0.40) 15px 15px 10px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    height: 500px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.inputListInside {
+    height: 440px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.detailInputList {
+    background-color:whitesmoke;
+    font-size:12px;
+    margin-top:2px;
+    margin-bottom:2px;
+    border-style:none;
+}
+
+.scrollOverflowProducts {
+    position: absolute;
+    top: 140px;
+    bottom: 50px;
+    left: 20px;
+    right: 20px;
+    overflow-x: visible;
+    overflow-y: auto;
+    width: 95%;
+}
+
+.scrollOverflowProductType {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+    width:100%;
+}
+
+
+
+
+.orderProductTable {
+    border-style: none;
+    width: 90%;
+}
+
+    .orderProductTable > tr {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+div.outdoorIndoor {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 20px;
+    bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    border: 7px ridge;
+    border-color:darkgoldenrod;
+}
+
+@media (max-width:1000px) {
+    div.mainBoard {
+        width: 100%;
+    }
+
+    div.mainOrder {
+        width: 100%;
+    }
+
+    div.outdoorIndoor {
+        right: 0px;
+    }
+}
+
+@media (max-width:600px) {
+    div.mainBoard {
+        width: 90%;
+    }
+
+    div.mainOrder {
+        width: 90%;
+    }
+
+    div.outdoorIndoor {
+        right: 0px;
+    }
+
+}
+@media (min-width: 768px) {
+    .modal-lg {
+        max-width: 1200px;
+    }
+    div.mainOrder {
+        
+        right:-30px;
+    }
+    div.mainBoard{
+        left: -30px;
+    }
+}
+@media (min-width: 1600px){
+    div.mainOrder {
+        height: 700px;
+    }
+
+    div.mainBoard {
+        height: 670px;
+    }
+}
+
+div.placeImage {
+    /*background: url('../img/vereda.jpg') no-repeat content-box;*/
+    background-size:320px 200px;
+}
+
+.thumbnail-container{
+    max-height:300px;
+    overflow-y:auto;
+    padding-top:5px;
+}
+div.background-thumbnail {
+    height: 200px;
+    margin:10px;
+    border: 3px ridge darkgoldenrod;
+}
+
+div.background-thumbnail:hover {
+    box-shadow: rgba(51, 51, 51, 0.40) 10px 10px 5px;
+    margin:8px;
+}
+div.thumbnail-border{
+    padding:0px;
+}
+/*div.background-thumbnail:active {
+        box-shadow:none;
+        margin: 10px;
+    }*/
+.delete-thumbnail {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 25px;
+    width: 25px;
+    border-radius: 2px 2px;
+    z-index: 5;
+}
+    .delete-thumbnail:hover {
+        height: 27px;
+        width: 27px;
+        box-shadow: rgba(51, 51, 51, 0.40) 2px 2px 1px;
+        right: 14px;
+        top: 14px;
+    }
+    .delete-thumbnail:active {
+        box-shadow: none;
+        height: 25px;
+        width: 25px;
+    }
+
+div.mapFooter {
+    position: absolute;
+    height: auto;
+    bottom: 5px;
+    left: 100px;
+    right: 0px;
+}
+
+/* Mesa */
+.board {
+    position: absolute;
+    right: auto;
+    bottom: auto;
+    cursor: pointer;
+    padding: 6px 2px 6px 2px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 90px;
+    max-height: 90px;
+    color: white;
+    margin: 2px;
+    text-align: center;
+    border: 1px solid black;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    text-size-adjust: 10%;
+}
+
+
+    div.outdoorIndoor > .board.active {
+        margin: 1px;
+        box-shadow: rgba(51, 51, 51, 0.40) 8px 8px;
+        cursor: none;
+    }
+
+.movingToggle {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    background-color: rgb(238, 178, 84);
+    color: ghostwhite;
+}
+    .movingToggle:hover {
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 0px;
+        background-color: rgb(248, 197, 115);
+    }
+    .movingToggle:focus {
+        background-color: rgb(238, 178, 84);
+        color: ghostwhite;
+    }
+    .movingToggle:disabled {
+        background-color: rgba(233, 139, 9, 0.70);
+        box-shadow: none;
+        color: lightgray;
+    }
+    
+
+@media(max-width:1000px) {
+    .board {
+        min-height: 30px;
+        min-width: 30px;
+        max-height: 30px;
+        max-width: 30px;
+        font-size: 10px;
+    }
+    .movingToggle {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.productFocused{
+    font-weight: bold;
+    color:saddlebrown;
+}
+
+.font-size-small{
+    font-size:small;
+}
+
+.nav-item {
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: none;
+}
+.navbar-brand {
+    border-radius: 5px;
+    /*margin-left: 0px;
+    margin-right: 0px;*/
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.nav-item:hover {
+    background-color: rgb(245, 217, 173);
+    /*margin-left:-3px;
+    margin-right:-3px;*/
+    margin-top:-1px;
+    margin-bottom:-1px;
+}
+.navbar-brand:hover {
+    background-color: rgb(245, 217, 173);
+}
+
+.changeInputViewMode{
+    position:absolute;
+    top:35px;
+    right:10px;
+}
+
+.dropdown-menu {
+    background-color: rgb(243, 209, 155);
+}
+
+.nav-item-dropdown:hover {
+    background-color: rgb(245, 217, 173);
+}
+
+.dropdown-item {
+    background-color: rgb(243, 209, 155);
+}
+    .dropdown-item:hover {
+        background-color: rgb(245, 217, 173);
+    }
+.dropdown-divider {
+    color: black;
+    border: 1px groove rgb(245, 217, 173);
+}
+.nav-tabs > .nav-item:hover{
+    background-color:transparent;
+    border:none;
+}
+.nav-tabs > .nav-item > .nav-link:hover {
+    background-color: white;
+}
