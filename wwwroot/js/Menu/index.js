@@ -47,8 +47,7 @@
             $("#productTypeFormModalLabel").html("Agregar Categoría");
             $("#productTypeFormModal").modal("show");
         },
-        //#endregion
-
+        //#endregion
         //#region Select
         selectProduct(product) {
             //VER
@@ -148,9 +147,7 @@
         failConfirmUpdate(result) {
             productList.updatePriceFailMessage = result.statusText;
         },
-        //#endregion
-
-        //#region Search
+        //#endregion        //#region Search
         getProductTypeList() {
             genericListSearch(
                 "/api/productType/GetList",
