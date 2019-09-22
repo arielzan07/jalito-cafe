@@ -217,6 +217,22 @@
                 }
             );
         },
+        rollbackOrder(order) {
+            genericBootboxConfirm("¿Seguro desea deshacer este cobro y volver a abrir la mesa?",
+                "Confirmar", "btn btn-sm btn-info",
+                "Cancelar", "btn btn-sm btn-link",
+                function () {
+                    mainInfo.$delete(mainInfo.inputs, mainInfo.inputs.indexOf(order));
+                    $.ajax({
+                        url: "/api/info/rollback/" + order.id,
+                        method: "DELETE"
+                    }).fail(function (result) {
+                        bootbox.alert(result.responseText);
+                        mainInfo.getInputs();
+                    });
+                }
+            );
+        },
         changeExpenseMode(newMode) {
             this.expenseMode = newMode;
         }
