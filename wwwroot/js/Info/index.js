@@ -305,6 +305,7 @@
             });
             return sum;
         },
+
         totalsByExpenseType() {
             var types = [];
             this.expensesByDate.forEach(function (e) {
